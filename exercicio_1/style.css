@@ -1,0 +1,162 @@
+:root {
+  --body-bgc: #3b3b3b;
+}
+
+/* animações */
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0.1;
+  }
+}
+
+/* estilos dos elementos */
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  width: 100vw;
+  background-color: var(--body-bgc);
+  transition: background-color 2.5s;
+}
+
+/* estilos genéricos */
+
+.cicle {
+  border-radius: 1000px;
+}
+
+.textWithBackground {
+  width: fit-content;
+  padding: 2px 4px 2px 4px;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #000;
+  font-size: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  text-align: center;
+}
+
+.anime-typing {
+  width: 10ch;
+  white-space: nowrap;
+  overflow-x: hidden;
+  animation: typing 1s steps(10);
+}
+
+.anime-fadeIn {
+  opacity: 1;
+  animation: fadeIn 1s;
+}
+
+/* header */
+
+.m_header {
+  max-width: 900px;
+  max-height: 48px;
+  width: 100%;
+  padding: 1px 3px 6px 2px;
+  background-color: #3b3b3b;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.m_header__title {
+  width: fit-content;
+  padding: 0 4px 0 4px;
+  border-left: 3px solid #ff2121;
+  background-color: #ffff4a14;
+  margin-left: 3%;
+  font-size: 2em;
+  font-family: serif;
+  text-align: center;
+}
+
+/* main */
+
+.m_content {
+  width: 100%;
+  margin: 32px auto 8px auto;
+}
+
+.m_content__box {
+  width: 70%;
+  margin: 0 auto;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 6px 6px 16px rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.m_content__box .day_information_container {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+
+.day_information_container .day_message_container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.m_content__box .day_image {
+  width: 250px;
+  height: 250px;
+}
+
+.day_information_container {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.day_message_container {
+  width: fit-content;
+}
+
+.day_message_container p {
+  margin: 0;
+}
+
+/* footer */
+
+.m_footer {
+  width: 100%;
+  margin: 48px auto 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.m_footer p {
+  color: azure;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 0.9em;
+}
+
+@media (min-width: 700px) {
+  .m_content__box {
+    width: 50%;
+  }
+}
+
+.link-23 {
+  color: azure;
+  text-decoration: none;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>exercícos 3</title>
+</head>
+<body>
+  <header class="m_header">
+    <h1 class="m_header__title">
+      Vamos contar
+    </h1>
+  </header>
+  <main class="m_content">
+    <section class="m_content__box">
+      <form id="data_form">
+        <fieldset>
+          <div class="container-line">
+            <label for="input_start">inicio: </label>
+            <input 
+              type="number" name="ipt_start1" id="input_start" min="-999" max="999" value="">
+          </div>
+          <div class="container-line">
+            <label for="input_end">fim: </label>
+            <input 
+              type="number" name="ipt_end" id="input_end" min="-999" max="999">
+          </div>
+          <div class="container-line">
+            <label for="input_steps">passos: </label>
+            <input 
+              type="number" name="ipt_steps" id="input_steps" min="-999" max="999">
+          </div>
+        </fieldset>
+        <nav class="container-center">
+          <button type="submit" id="button_init" class="button-clean">
+            iniciar
+          </button>
+        </nav>
+      </form>
+      <div class="output_container container-center">
+        <output id="output_result"></output>
+      </div>
+    </section>
+  </main>
+  <footer class="m_footer">
+    <p>JEmerson23</p>
+  </footer>
+  <script src="./index.js"></script>
+</body>
+</html>

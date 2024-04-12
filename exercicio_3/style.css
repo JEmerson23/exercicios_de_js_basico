@@ -1,0 +1,147 @@
+:root {
+  --body-bgc: #3b3b3b;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  width: 100vw;
+  background-color: var(--body-bgc);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-line {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.container-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-clean {
+  width: fit-content;
+  padding: 1%;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.6);
+  font-family: sans-serif;
+  font-weight: 600;
+  transition: transform 0.25s;
+}
+
+.button-clean:active {
+  transform: scale(0.9);
+}
+
+/* header */
+
+.m_header {
+  width: 100%;
+  padding: 3px 3px 3px 3px;
+  max-height: 48px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.m_header__title {
+  margin-left: 3%;
+  font-size: 1.8em;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+/* main */
+
+.m_content {
+  width: 100%;
+  margin: 8px auto 6px auto;
+}
+
+.m_content__box {
+  width: 70%;
+  margin: 0 auto;
+  border-radius: 10px;
+  background-color: #fff;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.m_content__box form {
+  margin: 0 auto;
+}
+
+.m_content__box form fieldset {
+  border: none;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.m_content__box form fieldset div {
+  min-width: 150px;
+  margin: 4px auto 4px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.m_content__box form fieldset div label {
+  text-align: left;
+  margin: 0 auto 0 0;
+}
+
+.m_content__box form fieldset div input {
+  width: 6ch;
+  margin: 0 0 0 auto;
+  border: 1px solid cornflowerblue;
+  border-bottom-width: 3px;
+  background-color: #dfdfff;
+  color: #000000;
+  text-align: center;
+}
+
+.m_content__box form nav.container-center {
+  margin: 8px auto 8px auto;
+}
+
+.m_content__box form nav.container-center .button-clean {
+  background-color: blueviolet;
+  color: #fff;
+  
+}
+
+.m_content__box form .output_container {
+  padding: 0;
+}
+
+.output_container output {
+  margin: 0 auto;
+  width: 95%;
+  padding: 2%;
+  box-sizing: border-box;
+  text-align: justify;
+  overflow-wrap: break-word;
+}
+
+/* footer */
+
+.m_footer {
+  width: 100%;
+  margin: 4px auto 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.m_footer p {
+  color: azure;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 0.9em;
+}

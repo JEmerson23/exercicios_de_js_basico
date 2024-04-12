@@ -1,0 +1,156 @@
+:root {
+  --body-bgc: #3b3b3b;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  width: 100vw;
+  background-color: var(--body-bgc);
+}
+
+.button-clean {
+  padding: 3px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 2px 6px rgba(0,0,0,0.6);
+  background-color: #fff;
+  font-weight: 500;
+  font-size: 0.9em;
+  transition: transform 0.25s;
+}
+
+.button-clean:active {
+  transform: scale(0.9);
+}
+
+.container-line-center {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.input-clean {
+  padding: 2px;
+  border: none;
+  background-color: #d7d7d7;
+  border-bottom: 1px solid #ababab;
+  border-radius: 4px;
+  font-size: 0.9em;
+  font-weight: 500;
+  text-align: center;
+}
+
+.input-clean:focus {
+  outline: none;
+}
+
+/* header */
+
+.m_header {
+  width: 100%;
+  padding: 3px 3px 3px 3px;
+  max-height: 48px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.m_header__title {
+  text-align: center;
+  font-size: 1.8em;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 3%;
+}
+
+/* main */
+
+.m_content {
+  max-width: 900px;
+  width: 100%;
+  margin: 8px auto 6px auto;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1em;
+}
+
+.m_content__box {
+  max-width: 80%;
+  width: 70%;
+  margin: 0 auto;
+  padding: 6px;
+  border-radius: 10px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.input_container {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  gap: 2%;
+  font-size: 1em;
+}
+
+.input_container label {
+  flex-shrink: 0;
+  text-align: left;
+}
+
+#input_number {
+  width: 6ch;
+  text-align: center;
+}
+
+#select_output {
+  margin-right: 6px;
+  min-width: 17ch;
+  width: fit-content;
+  text-align: center;
+}
+
+#data_output {
+  width: 100%;
+  height: fit-content;
+  border-top: 2px solid #e3e3e3;
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+/* footer */
+
+.m_footer {
+  width: 100%;
+  margin: 4px auto 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.m_footer p {
+  color: azure;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 0.9em;
+}
+
+/* media queries */
+
+@media screen and (max-width: 430px) {
+  .input_container {
+    margin-bottom: 4%;
+    flex-wrap: wrap;
+  }
+
+  .input_container button {
+    margin-top: 2%;
+  }
+}

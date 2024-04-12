@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>exercícos 4</title>
+</head>
+<body>
+  <header class="m_header">
+    <div>
+      <h1 class="m_header__title">
+       Tabuada
+      </h1>
+    </div>
+  </header>
+  <main class="m_content">
+    <section class="m_content__box">
+      <form class="data_field_container">
+        <div class="dfc__input container-center">
+          <label for="input_number">número: </label>
+          <input 
+            type="number" id="input_number" max="100" placeholder="0 a 10" required>
+        </div>
+        <div class="dfc__select_1 container-center">
+          <select id="select_type_of_operation">
+            <option value="0">&#43;</option>
+            <option value="1">&minus;</option>
+            <option value="2">&times;</option>
+            <option value="3">&divide;</option>
+          </select>
+        </div>
+        <div class="dfc__select_2 container-center">
+          <select id="select_operation"></select>
+        </div>
+        <nav class="dfc__button container-center">
+          <button id="button_init" class="button-clean">resultado</button>
+        </nav>
+        <div class="dfc__output container-center">
+          <output id="output_result"></output>
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer class="m_footer">
+    <p>JEmerson23</p>
+  </footer>
+  <script src="./index.js"></script>
+</body>
+</html>

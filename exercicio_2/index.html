@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>exercícos 2</title>
+</head>
+<body>
+  <header class="m_header">
+    <h1 class="m_header__title">
+      Verificador de idade
+    </h1>
+  </header>
+  <main class="m_content">
+    <section class="m_content__box">
+      <form id="user_data_form" class="data_container">
+        <fieldset class="user_age_input_container container-line">
+          <label for="__uyob">Ano do nascimento: </label>
+          <input type="number" name="user_year_of_birth" id="__uyob" 
+            placeholder="####" required>
+        </fieldset>
+        <fieldset class="user_gender_input_container container-line">
+          <legend>Sexo: </legend>
+            <input type="radio" name="user_gender" 
+              id="input_user_genter-male" value="male" checked>
+            <label for="input_user_genter-male">
+              homem
+            </label>
+            <input type="radio" name="user_gender" 
+              id="input_user_genter-female" value="female">
+            <label for="input_user_genter-female">
+              mulher
+            </label>
+        </fieldset>
+        <div class="button_check_age_container">
+          <button id="button_check_age" class="button-clean">verificar</button>
+        </div>
+      </form>
+      <div class="output_container">
+        <figure id="representative_img_container" class="container-column">
+          <figcaption id="output_age_data">
+            adicione dados para verificação
+          </figcaption>
+          <div id="output_image"></div>
+        </figure>
+      </div>
+    </section>
+  </main>
+  <footer class="m_footer">
+    <p>JEmerson23</p>
+  </footer>
+  <script src="./index.js"></script>
+</body>
+</html>
